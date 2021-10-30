@@ -15,8 +15,6 @@
     width: 40px;
     height: 40px;
     z-index: 100;
-    right: 24px;
-    bottom: 48px;  
   }
   #page_top a {
     width: 40px;
@@ -48,12 +46,17 @@
   }  
   /*トップ*/
   .top-img img {
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 80%;
+    padding: 32px;
+    border-radius: 56px;
     margin: 100px 0;
   }
+  
   /*メッセージ*/
-  .messa {
-    font-size: 1.5rem;
-  }  
+  .messa-main {
+    font-size: 1.8rem;
+  }
   .message-center {
     margin: 0 auto;
     text-align: center;
@@ -63,11 +66,12 @@
   }
   .message-img img {
     width: 50%;
-    margin-top: 64px;
+    margin-top: 48px;
   }
   .message-p{
     padding: 20px 20px;
     width: 100%;
+    font-size: 0.7rem;
   }
   .message-center {
     margin: 0 auto;
@@ -84,36 +88,76 @@
   }
   /*アイテム*/
   .semicircle {
-    height: 30vh;
+    height: 40vh;
   }  
   .semicircle::before {
-    bottom: -440px;
+    bottom: -344px;
     width: 240px;
     height: 160px;
   }
   .recommend h2 {
-    margin-top: 280px;
+    margin-top: 160px;
     padding: 200px 0 16px 0;
     font-size: 25px;
     margin-bottom: 0px;
     letter-spacing: 3px;
   }
   .recommend {
-    margin-top: 0px;
+    margin-top: 180px;
     z-index: 10;
   }
   .recommend-size {
     padding: 16px 0 32px 0;
   }
+  .border {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }  
   .item {
     margin-top: 0px;
     padding: 0 0 16px 0;
-    width: 45%;
+    width: 90%;
   }
   .item img {
     margin: 16px 0 8px 0;
-    width: 70%;
+    width: 40%;
   }
+  .Caramel:before {
+    width: 50px;
+    top: 80px;
+    right: 35%;
+  }  
+  .mokha-p:before {
+    width: 80px;
+    top: 75px;
+    right: 40%;
+    z-index: 98;
+  }
+  .matcha:before {
+    width: 80px;
+    top: 80px;
+    right: 35%;
+  }  
+  .fragolia-p:before {
+    width: 80px;
+    top: 80px;
+    right: 40%;
+    z-index: 98;
+  }
+  .item-back::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 720px;
+    z-index: 0;
+    top: 1300px;
+    left: 10%;
+    background-color: #fff;
+  }
+
   .dounuts {
     width: 100%;
     margin-bottom: 0px;
@@ -128,6 +172,10 @@
   .dounuts h4 {
     font-size: 15px;
   }
+  .more {
+    font-size: 2rem;
+    margin-top: 40px;
+  }  
   /*sns*/
   .sns {
     width: 80%;
@@ -150,9 +198,20 @@
   .shop {
     padding-top: 56px;
   }  
+  .shop-img {
+    display: block;
+  }
   .shop img {
     width: 90%;
   }
+  .shop1 {
+    margin-top: 40px;
+  }
+  .time {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  
   /*sns*/
   .sns-wrap {
     margin-top: 56px;
@@ -162,6 +221,6 @@
     width: 90%;
   }  
   .map-link p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }  
 }
